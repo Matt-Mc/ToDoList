@@ -3,7 +3,7 @@ import createTask from './Task'
 class createProject {
     constructor(Title, currentTasks) {
         this.Title = Title;
-        this.currentTasks = currentTasks;
+        this.currentTasks = [] || currentTasks;
     }
 
     createNewTask(Title, Date, Description, Urgency){
@@ -15,4 +15,4 @@ class createProject {
 
 
 
-module.exports = createProject;
+export default createProject;

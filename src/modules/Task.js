@@ -7,4 +7,4 @@ class createTask {
     }
 }
 
-module.exports = createTask;
+export default createTask;
