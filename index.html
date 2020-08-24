@@ -10,7 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="/css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
     </head>
     <body>
@@ -24,7 +24,7 @@
 
 
 
-        <div id="myModal" class="modal">
+        <div id="myModalTask" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
             <button class="delete is-danger" id="ModalClose"></button>
@@ -63,6 +63,27 @@
           </div>
         </div>
     </div>
+
+    <div id="myModalProject" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+        <button class="delete is-danger" id="ModalClose"></button>
+            <div class="field">
+                <label class="label">Project Title</label>
+                <div class="control">
+                    <input class="input" id="taskTitleInput" type="text" placeholder="Name of the Project">
+                </div>
+            </div>
+            <div class="field is-grouped">
+                <div class="control">
+                  <button id="Submit" class="button is-link">Submit</button>
+                </div>
+                <div class="control">
+                  <button class="button is-link is-light" id="ModalClose">Cancel</button>
+                </div>
+              </div>
+        </div>
+    </div>
         
 
 
@@ -73,6 +94,6 @@
 
 
         
-        <script src="main.js"></script>
+        <script src="/dist/main.js"></script>
     </body>
 </html>

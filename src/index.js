@@ -17,20 +17,22 @@ console.log(defaultProject)
 
 
 projectAdd.addEventListener('click', (e) => {
-    const modal = document.querySelector('#myModal');
-    modal.style.display ="block";
+    const modalproject = document.querySelector('#myModalProject');
+    modalproject.style.display ="block";
 });
 
 
 modelClose.forEach(button => {
     button.addEventListener('click', (e) => {
-        const modal = document.querySelector("#myModal")
-        modal.style.display = "none";
+        const modalproject = document.querySelector("#myModalProject")
+        modalproject.style.display = "none";
+        const modaltask = document.querySelector("#myModalTask")
+        modaltask.style.display = "none";
     });
 });
 
 submitButton.addEventListener('click', (e) => {
-    const modal = document.querySelector("#myModal")
+    const modal = document.querySelector("#myModalProject")
     modal.style.display = "none";
     addBookToLibrary()
 })
